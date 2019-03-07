@@ -1,4 +1,6 @@
 git本地操作
+git config --list 查看配置
+git status 查看状态
 git  --help  调出git的帮助文档
 git +命令 --help 查看某个具体命令的帮助文档
 git --version  查看git的版本
@@ -7,8 +9,33 @@ git --init 生成空的本地仓库
 
 git add  将文件添加到暂存区
 
-git commit -m "test" 提交到本地仓库
+git commit -m "test" 讲暂存区里的文件提交本地仓库
 
 初次commit之前 ，需要配置用户邮箱及用户名，使用以下命令
      git config --global user.email "you@example.com"
      git config --global user.name "Your Name"
+
+git remote  用户管理远程仓库
+例子 git remote add origin（名字） http://url地址
+
+git push -u origin master  往名字为orgin的仓库的master分支上提交变更
+
+git fetch
+   拉取远程仓库的变更到本地仓库
+git merge origin/master
+   讲远程的变更合并到本地仓库的master分支
+git pull
+   --不建议使用  等同于fetch之后merge
+
+git rm --cache  文件名  在暂存区进行删除
+git rm 会删除工作区里的文件 并提交到暂存区  
+git checkout master 文件名 从暂存区拉取文件恢复到工作区，如果工作区已经有该文件，则会选择覆盖
+
+
+
+
+新建文件---》Untracked
+使用add命令将新建的文件加入到暂存区---》Staged
+使用commit命令将暂存区的文件提交到本地仓库---》Unmodified
+如果对Unmodified状态文件进行修改 ---》modified
+如果对Unmodified的状态文件进行remove操作---》Untracked

@@ -39,3 +39,5 @@ git checkout master ÎÄ¼şÃû ´ÓÔİ´æÇøÀ­È¡ÎÄ¼ş»Ö¸´µ½¹¤×÷Çø£¬Èç¹û¹¤×÷ÇøÒÑ¾­ÓĞ¸ÃÎÄ¼ş£
 Ê¹ÓÃcommitÃüÁî½«Ôİ´æÇøµÄÎÄ¼şÌá½»µ½±¾µØ²Ö¿â---¡·Unmodified
 Èç¹û¶ÔUnmodified×´Ì¬ÎÄ¼ş½øĞĞĞŞ¸Ä ---¡·modified
 Èç¹û¶ÔUnmodifiedµÄ×´Ì¬ÎÄ¼ş½øĞĞremove²Ù×÷---¡·Untracked
+
+£¿£¿
